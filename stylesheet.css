@@ -1,0 +1,213 @@
+body{
+  margin:0;
+  min-height:100vh;
+  position: relative;
+  text-align: center;
+  background-color: lightgray;
+  font-family:YuMinCho;
+}
+
+header {
+  margin:0;
+  color:black;
+  background-image: url(https://media.istockphoto.com/photos/landscape-picture-id1172181313?s=2048x2048);
+  background-color: rgba(255,255,255,0.7);
+  background-blend-mode: lighten;
+  background-size:cover;
+  height:400px;
+}
+  
+h1 {
+  margin:0;
+  font-size:60px;
+  text-align: center;
+  padding-top:100px;
+  padding-bottom:50px;
+ 
+}
+
+nav {
+  margin:0 auto;
+  text-align: center;
+  font-size:25px;
+  width:50%;
+}
+a {
+  color:black;
+  
+}
+a:hover {
+  opacity:0.6;
+}
+.itiran {
+  padding-right:35px;
+}
+.ryokann {
+  padding-left:35px;
+}
+main {
+  width:100%;
+  margin:0 auto;
+}
+h2 {
+  padding-top:50px;
+  margin:0;
+  font-size:30px;
+}
+h3 {
+  float:left;
+  margin:0 0 0 20px;
+  padding-top:50px;
+}
+ul {
+  padding:0;
+  margin:15px auto;
+
+}
+.atami {
+  padding-left:30px;
+}
+.gero {
+  padding-left:30px;
+}
+.kusatsu {
+  padding-left:30px;
+}
+.nagaoka {
+  padding-left:30px;
+}
+.onsen-wrapper {
+  display:flex;
+  flex-wrap:wrap;
+  width:80%;
+ 
+  
+}
+.onsen-wrapper li {
+   background-color:white;
+   width:40%;
+   border-radius:20px;
+   float:right;
+   margin:25px auto;
+      
+ }
+ li {
+   list-style: none;
+ }
+ 
+img {
+  padding-top:20px;
+  padding-bottom:20px;
+  height:80%;
+  width:40%;
+}
+
+.cafe-wrapper {
+  background-color: white;
+  width:50%;
+  margin:20px auto;
+  border-radius:20px;
+  
+
+}
+h4 {
+  font-size:25px;
+}
+.cafe-wrapper p {
+  width:50%;
+  margin:auto;
+  padding-bottom:20px;
+  text-align:left;
+}
+footer {
+  background-color: black;
+  color:white;
+  margin:0;
+
+ width:100%;
+ height:70px;
+}
+h5 {
+  margin:0;
+  padding:10px 0 0 10px;
+  float:left;
+  font-size:20px;
+}
+.hotel-wrapper {
+  width:50%;
+  margin:20px auto;
+  
+}
+.hotel {
+  background-color: white;
+  border-radius:20px;
+}
+.upper {
+  font-size: 20px;
+  background-color: rgba(0,0,0,1);
+  width:50px;
+  height:50px;
+  border-radius:50px;
+  position:fixed;
+  right:30px;
+  bottom:80px;
+}
+.fas {
+  color:white;
+  height:100%;
+  margin:auto;
+  font-size:30px;
+  padding-top:15px;
+
+  
+}
+@media (orientation:portrait) {
+  header {
+    height:250px;
+  }
+  h1 {
+    font-size:45px;
+  }
+  nav {
+    display:none;
+
+  }
+  .onsen-wrapper {
+    display:block;
+    width:80%;
+    margin:0 auto;
+  }
+  .onsen-wrapper li {
+    width:80%;
+    float: inherit;
+  }
+
+ .cafe-wrapper {
+   width:80%;
+ }
+.cafe-wrapper p {
+  width:80%;
+  padding-bottom:10px;
+}
+h4 {
+  margin-top:10px;
+  margin-bottom:10px;
+  font-size:15px;
+}
+.around-cafe p {
+  font-size:10px;
+}
+a:hover {
+  opacity: inherit;
+}
+.upper {
+  right:10px;
+  height:30px;
+  width:30px;
+
+}
+.fas {
+  padding-top:10px;
+  font-size:20px;
+}
+};
