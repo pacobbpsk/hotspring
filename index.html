@@ -1,279 +1,176 @@
-html {
-  margin:0;
-  padding:0;
-}
-body{
-  margin:0;
-  min-height:100vh;
-  position: relative;
-  text-align: center;
-  background-color: lightgray;
-  font-family:YuMinCho;
-}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>温泉巡り</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
-header {
-  margin:0;
-  color:black;
-  background-image: url(https://media.istockphoto.com/photos/landscape-picture-id1172181313?s=2048x2048);
-  background-color: rgba(255,255,255,0.7);
-  background-blend-mode: lighten;
-  background-size:cover;
-}
-  
-h1 {
-  margin:0;
-  font-size:60px;
-  text-align: center;
-  padding-top:100px;
-  padding-bottom:50px;
- 
-}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
-nav {
-  margin:0 auto;
-  text-align: center;
-  font-size:25px;
-  width:50%;
-  
-}
-a {
-  color:black;
-  
-}
-a:hover {
-  opacity:0.6;
-}
-.menu {
-  display:none;
-}
-.itiran {
-  padding-right:35px;
-}
-.ryokann {
-  padding-left:35px;
-}
-main {
-  width:100%;
-  margin:0 auto;
-}
-h2 {
-  padding-top:50px;
-  margin:0;
-  font-size:30px;
-}
-h3 {
-  float:left;
-  margin:0 0 0 20px;
-  padding-top:50px;
-}
-ul {
-  padding:0;
-  margin:15px auto;
+ </head>
+<body>
+  <div class="wrapper">
+  <header id="header">
+    <h1>温泉街巡り</h1>
+    
+    <nav>
 
-}
-.atami {
-  padding-left:30px;
-}
-.gero {
-  padding-left:30px;
-}
-.kusatsu {
-  padding-left:30px;
-}
-.nagaoka {
-  padding-left:30px;
-}
-.onsen-wrapper {
-  display:flex;
-  flex-wrap:wrap;
-  width:80%;
- 
-  
-}
-.onsen-wrapper li {
-   background-color:white;
-   width:40%;
-   border-radius:20px;
-   float:right;
-   margin:25px auto;
+      <a href="#itiran" class="itiran">温泉一覧</a> <a href="#cafe" class="cafe">周辺カフェ</a> <a href="#hotel" class="ryokann">宿泊地</a>
+    </nav>
+
+  </header>
+  <main>
+    <!--メニューナビ-->
+    <nav class="menu" id="nav">
+      <div>
+        <i class="fas fa-bars" id="menu-icon"></i>
+      </div>
+      <div class="menu-contents" id="menu-contents">
+        <i class="fas fa-times" id="close-btn"></i>
+        <h3 class="menu-title">MENU</h3>
+        <ul class="menu-itiran">
+          <a href="#itiran"><li class="menu-list">温泉一覧</li></a> 
+          <a href="#cafe"><li class="menu-list">周辺カフェ</li></a>
+          <a href="#hotel"><li class="menu-list">宿泊地</li></a>
+        </ul>
+
+      </div>
+    </nav>
+    <!--温泉一覧-->
+    <div class="onsen-list" id="itiran">
+      <h2>＜温泉一覧＞</h2>
+      <div>
+        <ul class="onsen-wrapper">
+          <li class="onsen">
+            <div class="atami">
+              
+              <a href="#">
+                <h3>熱海温泉</h3>
+                
+                  <img src="https://media.istockphoto.com/photos/hot-spring-bath-picture-id844946608?s=2048x2048" alt="">
+                  
+                </a>
+            </div>
       
- }
- li {
-   list-style: none;
- }
- 
-img {
-  padding-top:20px;
-  padding-bottom:20px;
-  height:80%;
-  width:40%;
-}
 
-.cafe-wrapper {
-  background-color: white;
-  width:50%;
-  margin:20px auto;
-  border-radius:20px;
-  
+          </li>
+          <li class="onsen">
+            <div class="kusatsu">
+              <a href="">
+              <h3>草津温泉</h3>
+                <img src="https://media.istockphoto.com/photos/hot-spring-bath-picture-id844946608?s=2048x2048" alt="">
+              </a>
+            </div>
 
-}
-h4 {
-  font-size:25px;
-}
-.cafe-wrapper p {
-  width:50%;
-  margin:auto;
-  padding-bottom:20px;
-  text-align:left;
-}
-.shukuhakuti {
-  margin-bottom:80px;
-}
-.wrapper {
-  position:relative;
-  padding-bottom:70px;
-  box-sizing:border-box;
-}
-footer {
-  background-color: black;
-  color:white;
-  width:100%;
-  position:absolute;
-  bottom:0;
-  float:left;
-  text-align: left;
-}
-h5 {
-  margin:0;
-  padding:10px 0 0 10px;
-  font-size:20px;
-}
-.fa-instagram {
-  margin:0;
-  font-size:40px;
-  padding-top:20px;
-  padding-bottom:20px;
-  padding-left:10px;
-  color:white;
-  
-}
-.hotel-wrapper {
-  width:50%;
-  margin:20px auto;
-  
-}
-.hotel {
-  background-color: white;
-  border-radius:20px;
-}
-.upper {
-  font-size: 20px;
-  background-color: rgba(0,0,0,1);
-  width:50px;
-  height:50px;
-  border-radius:50px;
-  position:fixed;
-  right:30px;
-  bottom:150px;
-  margin:0;
-}
-.fas {
-  color:white;
-  font-size:30px;
-  padding-top:15px;
+          </li>
+    
+          <li class="onsen">
+            <div class="gero">
+             <a href="">
+             <h3>下呂温泉</h3>
+              <img src="https://media.istockphoto.com/photos/hot-spring-bath-picture-id844946608?s=2048x2048" alt="">
+            </a>
+          </div>
 
-  
-}
+          </li>
 
-/*縦長サイズの表示*/
-@media (orientation:portrait) {
-  header {
-    height:250px;
-  }
-  h1 {
-    font-size:45px;
-  }
-  nav {
-    display:none;
+          <li class="onsen">
+            <div class="nagaoka">
+            <a href="">
+              <h3>長岡温泉</h3>
+                <img src="https://media.istockphoto.com/photos/hot-spring-bath-picture-id844946608?s=2048x2048" alt="">
+            </a>
 
-  }
-  .onsen-wrapper {
-    display:block;
-    width:80%;
-    margin:0 auto;
-  }
-  .onsen-wrapper li {
-    width:80%;
-    float: inherit;
-  }
+            </div>
+          </li>
+        </ul>
 
- .cafe-wrapper {
-   width:80%;
- }
-.cafe-wrapper p {
-  width:80%;
-  padding-bottom:10px;
-}
-h4 {
-  margin-top:10px;
-  margin-bottom:10px;
-  font-size:15px;
-}
-.around-cafe p {
-  font-size:10px;
-}
-a:hover {
-  opacity: inherit;
-}
-.upper {
-  right:10px;
-  height:40px;
-  width:40px;
+      </div>
 
-}
-.fas {
-  padding-top:10px;
-  font-size:25px;
-}
-.menu {
-  display:block;
-}
-.fa-bars {
-  color:black;
-  position:absolute;
-  top:150px;
-  right:20px;
-  font-size:25px;
-}
-.menu-contents{
-  display:none;
-  background-color:white;
-  text-align:center;
-  height:100%;
-  position:absolute;
-  top:0;
-  bottom:0;
-  right:0;
-  left:0;
-  width:100%;
-}
-.fa-times {
-  color:black;
-  font-size:25px;
-  position:absolute;
-  top:150px;
-  right:20px;
+    </div>
 
-}
-.menu-title{
-  width:100%;
-  margin:20px auto 30px auto;
-}
-.menu-itiran {
-  width:100%;
-  margin:0 auto;
-}
-.menu-list {
- padding-top:20px;
-}
-};
+   <!--周辺カフェ-->
+   <div class="around-cafe" id="cafe">
+     <h2>＜周辺カフェ＞</h2>
+    <div class="cafe-wrapper">
+      <a href="">
+
+        <img src="https://s3-ap-northeast-1.amazonaws.com/cdn.travel-star.jp/production/posts/eyecatches/000/004/252/eyecatch.jpg?1523387639" alt="">
+      </a>
+      <h4>熱海温泉</h4>
+      <p>熱海には、スイーツの美味しい喫茶店や海が見える高台のおしゃれカフェもあります。熱海で人気のおしゃれカフェや喫茶店をご紹介します。<div class=""></div></p>
+    </div>
+    <div class="cafe-wrapper">
+      <a href="">
+        <img src="https://www.ozmall.co.jp/travel/Content/uploaded/0413/images/main_pc_0413_1.jpg" alt="">
+
+      </a>
+      <h4>草津温泉</h4>
+      <p>さまざまな場面でゲストに素敵な時間と空間を提案してくれる、琵琶湖ほとりの憩いのカフェレストランをご紹介します。<div class=""></div></p>
+    </div>
+    <div class="cafe-wrapper">
+      <a href="">
+
+        <img src="https://gifumatic.com/img/midori_01.jpg" alt="">
+      </a>
+      <h4>下呂温泉</h4>
+      <p> 歴史ある岐阜の温泉地下呂温泉。ここには隠れた名店ともいえる、カフェ・レストランがあります。そこで今回は下呂温泉に観光に行く方のために、おすすめのカフェ・レストランを紹介します。<div class=""></div></p>
+    </div>
+    <div class="cafe-wrapper">
+      <a href="">
+
+        <img src="https://pbs.twimg.com/media/ETylWClUEAEpvn5.jpg" alt="">
+      </a>
+      <h4>長岡温泉</h4>
+      <p>新潟の長岡ではおしゃれでくつろげるカフェがたくさんあります。
+        お店によって人気のメニューもさまざまなので、どこに行っても充実したブレイクタイムを楽しめること間違いなしです。長岡で行きたくなるカフェを紹介します。<div class=""></div></p>
+    </div>
+
+   </div>
+   <!--宿泊地-->
+   <div class="shukuhakuti" id="hotel">
+     <h2>＜宿泊地＞</h2>
+     <div class="hotel-wrapper"> 
+       <div class="hotel atami-ryokann">
+         <img src="https://media.istockphoto.com/photos/ryokan-picture-id516494900?s=2048x2048" alt="">
+         <h4>熱海旅館</h4>
+         
+       </div>
+       <div class="hotel kusatu-ryokann">
+         <img src="https://media.istockphoto.com/photos/ryokan-living-room-japanese-style-with-tatami-mat-floor-and-picture-id1176099116?s=2048x2048" alt="">
+         <h4>草津旅館</h4>
+       </div>
+       <div class="hotel gero-ryokann">
+         <img src="https://media.istockphoto.com/photos/ryokan-in-kyoto-japan-picture-id959039282?s=2048x2048" alt="">
+         <h4>下呂旅館</h4>
+       </div>
+       <div class="hotel nagaoka-ryokann">
+         <img src="https://media.istockphoto.com/photos/traditional-japanese-indoor-house-and-paper-sliding-doors-and-tatami-picture-id812594370?s=2048x2048" alt="">
+         <h4>長岡旅館</h4>
+       </div>
+
+     </div>
+
+   </div>
+   <a href="#header">
+
+     <div class="upper">
+      <i class="fas fa-sort-up"></i>     
+    </div>
+   </a>
+  </main>
+  <footer>
+    <h5>温泉紹介サイト</h5>
+    <a href="https://www.instagram.com/paco_bbpsk/">
+      <i class="fab fa-instagram"></i>
+
+    </a>
+
+  </footer>
+</div>
+  <script src="jquery.js"></script>
+
+</body>
+</html>    
