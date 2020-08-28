@@ -10,5 +10,6 @@ $(function(){
   });
  $('.menu-list').click(function(){
    $('#menu-contents').fadeOut();
+   $('.upper').fadeIn();
  });
 });
