@@ -8,5 +8,7 @@ $(function(){
     $('#menu-contents').fadeOut();
     $('.upper').fadeIn();
   });
-
+ $('.menu-list').click(function(){
+   $('#menu-contents').fadeOut();
+ });
 });
