@@ -4,7 +4,7 @@ $(function(){
 
   });
   $('#close-btn').click(function(){
-    $('#menu-icon').fadeOut();
+    $('#nav').fadeOut();
   });
 
 });
