@@ -232,6 +232,10 @@ a:hover {
   width:40px;
 
 }
+
+.hotel-wrapper {
+  width:80%;
+}
 .fas {
   padding-top:10px;
   font-size:25px;
