@@ -13,6 +13,7 @@ $(function(){
  $('.menu-list').click(function(){
    $('#menu-contents').fadeOut();
    $('.upper').fadeIn();
+   $('body,html').removeClass('modal-fix');
  });
 
  var topPage = $('#pageTop');
