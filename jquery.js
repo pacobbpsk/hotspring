@@ -31,4 +31,55 @@ $(function(){
    },1000);
    return false;
  });
+
+ $('#dice').click(function(){
+  var number = parseInt(Math.random()* 6) + 1;
+  console.log(number);
+  if (number == 1){
+    $('.fa-dice-one').fadeIn();
+    $('.fa-dice-two').fadeOut();
+    $('.fa-dice-three').fadeOut();
+    $('.fa-dice-four').fadeOut();
+    $('.fa-dice-five').fadeOut();
+    $('.fa-dice-six').fadeOut();
+    
+    
+  } else if (number == 2) {
+   $('.fa-dice-two').fadeIn();
+   $('.fa-dice-one').fadeOut();
+    $('.fa-dice-three').fadeOut();
+    $('.fa-dice-four').fadeOut();
+    $('.fa-dice-five').fadeOut();
+    $('.fa-dice-six').fadeOut();
+  } else if (number == 3) {
+   $('.fa-dice-three').fadeIn();
+   $('.fa-dice-two').fadeOut();
+    $('.fa-dice-one').fadeOut();
+    $('.fa-dice-four').fadeOut();
+    $('.fa-dice-five').fadeOut();
+    $('.fa-dice-six').fadeOut();
+  } else if (number == 4) {
+   $('.fa-dice-four').fadeIn();
+   $('.fa-dice-two').fadeOut();
+    $('.fa-dice-three').fadeOut();
+    $('.fa-dice-one').fadeOut();
+    $('.fa-dice-five').fadeOut();
+    $('.fa-dice-six').fadeOut();
+  } else if (number == 5) {
+   $('.fa-dice-five').fadeIn();
+   $('.fa-dice-two').fadeOut();
+    $('.fa-dice-three').fadeOut();
+    $('.fa-dice-four').fadeOut();
+    $('.fa-dice-one').fadeOut();
+    $('.fa-dice-six').fadeOut();
+  } else {
+   $('.fa-dice-six').fadeIn();
+   $('.fa-dice-two').fadeOut();
+    $('.fa-dice-three').fadeOut();
+    $('.fa-dice-four').fadeOut();
+    $('.fa-dice-five').fadeOut();
+    $('.fa-dice-one').fadeOut();
+
+  }
+});
 });
