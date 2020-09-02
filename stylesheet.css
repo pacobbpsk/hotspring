@@ -10,7 +10,12 @@ body{
   background-color: lightgray;
   font-family:YuMinCho;
 }
-
+.wrapper {
+  position:relative;
+  padding-bottom:70px;
+  box-sizing:border-box;
+}
+/*ヘッダー*/
 header {
   margin:0;
   color:black;
@@ -19,7 +24,7 @@ header {
   background-blend-mode: lighten;
   background-size:cover;
 }
-  
+ /*温泉巡りタイトル*/ 
 h1 {
   margin:0;
   font-size:60px;
@@ -28,7 +33,7 @@ h1 {
   padding-bottom:50px;
  
 }
-
+/*メニュー*/
 nav {
   margin:0 auto;
   padding-bottom:10px;
@@ -36,36 +41,36 @@ nav {
   font-size:25px;
   width:50%; 
 }
-
+.menu {
+  display:none;
+}
+/*aタグ*/
 a {
   color:black;  
 }
 a:hover {
   opacity:0.6;
 }
-.menu {
-  display:none;
-}
+/*ナビメニュー*/
 .itiran {
   padding-right:35px;
 }
 .ryokann {
   padding-left:35px;
 }
-main {
-  width:100%;
-  margin:0 auto;
-}
+/*コンテンツタイトル（温泉一覧等）*/
 h2 {
   padding-top:50px;
   margin:0;
   font-size:30px;
 }
+/*温泉一覧内のコンテンツタイトル（熱海温泉）*/
 h3 {
   float:left;
   margin:0 0 0 20px;
   padding-top:50px;
 }
+/*温泉一覧*/
 ul {
   padding:0;
   margin:15px auto;
@@ -99,14 +104,14 @@ ul {
  li {
    list-style: none;
  }
- 
+
+ /*写真設定*/
 img {
   padding-top:20px;
   padding-bottom:20px;
-  height:80%;
-  width:40%;
+  width:55%;
 }
-
+/*周辺カフェ*/
 .cafe-wrapper {
   background-color: white;
   width:50%;
@@ -118,20 +123,30 @@ img {
 h4 {
   font-size:25px;
 }
-.cafe-wrapper p {
+
+p {
   width:50%;
   margin:auto;
   padding-bottom:20px;
   text-align:left;
 }
+/*宿泊地*/
 .shukuhakuti {
-  margin-bottom:80px;
+  margin-bottom:100px;
 }
-.wrapper {
-  position:relative;
-  padding-bottom:70px;
-  box-sizing:border-box;
+.hotel {
+  margin-top:30px;
+  margin-bottom:30px;
+  background-color: white;
+  border-radius:20px;
 }
+.hotel-wrapper {
+  width:50%;
+  margin:20px auto;
+  
+}
+
+/*フッター*/
 footer {
   background-color: black;
   color:white;
@@ -155,15 +170,7 @@ h5 {
   color:white;
   
 }
-.hotel-wrapper {
-  width:50%;
-  margin:20px auto;
-  
-}
-.hotel {
-  background-color: white;
-  border-radius:20px;
-}
+
 .upper {
   font-size: 20px;
   background-color: rgba(0,0,0,1);
@@ -213,17 +220,16 @@ h5 {
  .cafe-wrapper {
    width:80%;
  }
-.cafe-wrapper p {
-  width:80%;
-  padding-bottom:10px;
-}
+
 h4 {
   margin-top:10px;
   margin-bottom:10px;
   font-size:15px;
 }
-.around-cafe p {
+p {
   font-size:10px;
+  width:80%;
+  padding-bottom:10px;
 }
 a:hover {
   opacity: inherit;
