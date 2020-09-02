@@ -120,8 +120,7 @@ p {
   text-align:left;
 }
 /*宿泊地*/
-.shukuhakuti {
-}
+
 .hotel {
   margin-top:30px;
   background-color: white;
@@ -132,7 +131,9 @@ p {
   margin:0px auto;
   
 }
-
+.nagaoka-ryokann {
+  margin-bottom:50px;
+}
 /*フッター*/
 footer {
   background-color: black;
@@ -157,6 +158,25 @@ h5 {
   color:white;
   
 }
+.dice-wrapper {
+  height:200px;
+}
+.fa-dice {
+ 
+  color:black;
+  font-size:70px;
+}
+.result {
+
+  font-weight: bold;
+  font-size:20px;
+}
+#dice-result {
+
+  color:black;
+  font-size:70px;
+  display:none;
+}
 
 .upper {
   font-size: 20px;
@@ -169,7 +189,7 @@ h5 {
   bottom:150px;
   margin:0;
 }
-.fas {
+.fa-sort-up {
   color:white;
   font-size:30px;
   padding-top:15px;
@@ -234,7 +254,7 @@ a:hover {
 .hotel-wrapper {
   width:80%;
 }
-.fas {
+.fa-sort-up {
   padding-top:10px;
   font-size:25px;
 }
