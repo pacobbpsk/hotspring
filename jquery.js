@@ -34,7 +34,6 @@ $(function(){
 
  $('#dice').click(function(){
   var number = parseInt(Math.random()* 6) + 1;
-  console.log(number);
   if (number == 1){
     $('.fa-dice-one').fadeIn();
     $('.fa-dice-two').fadeOut();
