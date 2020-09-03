@@ -139,7 +139,7 @@ footer {
   background-color: black;
   color:white;
   width:100%;
-  margin-top:50px;
+  margin-top:70px;
   float:left;
   text-align: left;
 }
@@ -159,15 +159,16 @@ h5 {
   
 }
 .dice-wrapper {
-  height:200px;
+  height:250px;
 }
 .fa-dice {
- 
+  padding-top:15px;
   color:black;
   font-size:70px;
 }
 .result {
-
+  padding-top:10px;
+  padding-bottom:10px;
   font-weight: bold;
   font-size:20px;
 }
