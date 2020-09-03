@@ -1,33 +1,209 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <title>西暦変換</title>
+    <meta charset="utf-8">
+    <title>温泉巡り</title>
     <link rel="stylesheet" href="stylesheet.css">
-  
-  </head>
-  <body>
-    <header>
-      <h1>西暦計算機</h1>
-    </header>
-   <div class="wrapper">
-     <form action="">
-       <div class="seireki-keisan">
-         西暦 <span></span><input type="text" id="seireki"> <span></span><button id="seireki-keisan">計算する</button>
-         <br>
-         ↑<span></span> ↓
-         <br>
-         平成 <span></span><input type="text" id="heisei"> <span></span><button id="heisei-keisan">計算する</button>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+ </head>
+<body>
+  <div class="wrapper" id="wrapper">
+  <header id="header">
+    <h1>温泉街巡り</h1>
     
+    <nav>
+
+      <a href="#itiran" class="itiran">温泉一覧</a> <a href="#cafe" class="cafe">周辺カフェ</a> <a href="#hotel" class="ryokann">宿泊地</a>
+    </nav>
+
+  </header>
+    <!--メニューナビ-->
+    <nav class="menu" id="nav">
+      <div>
+        <i class="fas fa-bars" id="menu-icon"></i>
+      </div>
+      <div class="menu-contents" id="menu-contents">
+        <i class="fas fa-times" id="close-btn"></i>
+        <h3 class="menu-title">MENU</h3>
+        <ul class="menu-itiran">
+          <a href="#itiran"><li class="menu-list">温泉一覧</li></a> 
+          <a href="#cafe"><li class="menu-list">周辺カフェ</li></a>
+          <a href="#hotel"><li class="menu-list">宿泊地</li></a>
+        </ul>
+
+      </div>
+    </nav>
+    <!--温泉一覧-->
+    <div class="onsen-list" id="itiran">
+      <h2>＜温泉一覧＞</h2>
+        <ul class="onsen-wrapper">
+          <li class="onsen">
+            <div class="atami onsenn">
+              
+              <a href="#">
+                <h3>熱海温泉</h3>
+                
+                  <img src="https://media.istockphoto.com/photos/hot-spring-bath-picture-id844946608?s=2048x2048" alt="">
+                  
+                </a>
+      
+
+          </li>
+          <li class="onsen">
+            <div class="kusatsu onsenn">
+              <a href="">
+              <h3>草津温泉</h3>
+                <img src="https://media.istockphoto.com/photos/hot-spring-bath-picture-id844946608?s=2048x2048" alt="">
+              </a>
+            </div>
+
+          </li>
+    
+          <li class="onsen">
+            <div class="gero onsenn">
+             <a href="">
+             <h3>下呂温泉</h3>
+              <img src="https://media.istockphoto.com/photos/hot-spring-bath-picture-id844946608?s=2048x2048" alt="">
+            </a>
+          </div>
+
+          </li>
+
+          <li class="onsen">
+            <div class="nagaoka onsenn">
+            <a href="">
+              <h3>長岡温泉</h3>
+                <img src="https://media.istockphoto.com/photos/hot-spring-bath-picture-id844946608?s=2048x2048" alt="">
+            </a>
+
+            </div>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+   <!--周辺カフェ-->
+   <div class="around-cafe" id="cafe">
+     <h2>＜周辺カフェ＞</h2>
+    <div class="cafe-wrapper">
+      <a href="">
+
+        <img src="https://s3-ap-northeast-1.amazonaws.com/cdn.travel-star.jp/production/posts/eyecatches/000/004/252/eyecatch.jpg?1523387639" alt="">
+      </a>
+      <h4>熱海温泉</h4>
+      <p>熱海には、スイーツの美味しい喫茶店や海が見える高台のおしゃれカフェもあります。熱海で人気のおしゃれカフェや喫茶店をご紹介します。<div class=""></div></p>
+    </div>
+    <div class="cafe-wrapper">
+      <a href="#">
+        <img src="https://www.ozmall.co.jp/travel/Content/uploaded/0413/images/main_pc_0413_1.jpg" alt="">
+
+      </a>
+      <h4>草津温泉</h4>
+      <p>さまざまな場面でゲストに素敵な時間と空間を提案してくれる、琵琶湖ほとりの憩いのカフェレストランをご紹介します。<div class=""></div></p>
+    </div>
+    <div class="cafe-wrapper">
+      <a href="">
+
+        <img src="https://gifumatic.com/img/midori_01.jpg" alt="">
+      </a>
+      <h4>下呂温泉</h4>
+      <p> 歴史ある岐阜の温泉地下呂温泉。ここには隠れた名店ともいえる、カフェ・レストランがあります。そこで今回は下呂温泉に観光に行く方のために、おすすめのカフェ・レストランを紹介します。<div class=""></div></p>
+    </div>
+    <div class="cafe-wrapper">
+      <a href="">
+
+        <img src="https://pbs.twimg.com/media/ETylWClUEAEpvn5.jpg" alt="">
+      </a>
+      <h4>長岡温泉</h4>
+      <p>新潟の長岡ではおしゃれでくつろげるカフェがたくさんあります。
+        お店によって人気のメニューもさまざまなので、どこに行っても充実したブレイクタイムを楽しめること間違いなしです。長岡で行きたくなるカフェを紹介します。<div class=""></div></p>
+    </div>
+
+   </div>
+   <!--宿泊地-->
+   <div class="shukuhakuti" id="hotel">
+     <h2>＜宿泊地＞</h2>
+     <div class="hotel-wrapper"> 
+       <div class="hotel atami-ryokann">
+         <a href="">
+           <img src="https://media.istockphoto.com/photos/ryokan-picture-id516494900?s=2048x2048" alt="">
+
+         </a>
+         <h4>熱海旅館</h4>
+         <p>海を眺めながらゆっくりと過ごせます。他にも意外な魅力の観光スポットやアクティビティが充実しています。
+          大切な人ととでも、一人の優雅な時間にも適した熱海で素敵な旅を満喫してください。</p>
+         
+       </div>
+       <div class="hotel kusatu-ryokann">
+         <a href="">
+           <img src="https://media.istockphoto.com/photos/ryokan-living-room-japanese-style-with-tatami-mat-floor-and-picture-id1176099116?s=2048x2048" alt="">
+
+         </a>
+         <h4>草津旅館</h4>
+         <p>温泉街の中心に位置する湯畑は、草津温泉のシンボル。 毎分4000リットルの温泉が湧き出ていていつも湯けむりを舞い上げています。 湯畑の周りは瓦を敷きつめた歩道、石柵、白根山をかたどった「白根山ベンチ」など湯上がりの散策が楽しめる公園となっています。</p>
+       </div>
+       <div class="hotel gero-ryokann">
+         <a href="">
+           <img src="https://media.istockphoto.com/photos/ryokan-in-kyoto-japan-picture-id959039282?s=2048x2048" alt="">
+
+         </a>
+         <h4>下呂旅館</h4>
+         <p>1番の魅力は畳と温泉が融合した「畳風呂」。日本文化の良さを最大限に引き出したこだわりのスタイルでは、安らぎの時間を思う存分堪能することができます。また、飛騨川を見渡せる絶景ロケーションも素晴らしく、和・洋の両タイプが用意されているのもポイント。どの部屋も大きめに設計されており、旅の疲れをゆっくりと癒せる空間が広がっています。</p>
+       </div>
+       <div class="hotel nagaoka-ryokann">
+         <a href="">
+           <img src="https://media.istockphoto.com/photos/traditional-japanese-indoor-house-and-paper-sliding-doors-and-tatami-picture-id812594370?s=2048x2048" alt="">
+
+         </a>
+         <h4>長岡旅館</h4>
+        <p>伊豆長岡の隠れ家的な宿「割烹旅館 新叶」。客室は全6室、和の室礼を大切にした日本旅館ならではの趣。温泉は、貸切で利用できる庭園内に造られた露天風呂と大浴場。かつて割烹料理屋だったこともあり、料理には一切妥協せず、厳選した食材を一品一品丁寧に仕上げた懐石料理を味わうことができます。</p>
        </div>
 
-     </form>
+     </div>
 
-
-    <script type="text/javascript" src="script.js">
-    </script>
    </div>
-   
-  </body>
+   <!--サイコロ-->
+   <div class="dice-wrapper">
+     <h2>＜サイコロチャレンジ＞</h2>
 
-</html>
+     <a id="dice">
+       <i class="fas fa-dice"></i>
+  
+     <div class="result">
+       ↓
+     </div>  
+  
+     </a>
+     <i class="fas fa-dice-one" id="dice-result"></i>
+     <i class="fas fa-dice-two" id="dice-result"></i>
+     <i class="fas fa-dice-three" id="dice-result"></i>
+     <i class="fas fa-dice-four" id="dice-result"></i>
+     <i class="fas fa-dice-five" id="dice-result"></i>
+     <i class="fas fa-dice-six" id="dice-result"></i>
+   </div>
+   <!--ヘッダーへ戻るボタン-->
+   <a href="#header" id="pageTop">
+
+     <div class="upper">
+      <i class="fas fa-sort-up"></i>     
+    </div>
+   </a>
+  <footer>
+    <h5>温泉紹介サイト</h5>
+    <a href="https://www.instagram.com/paco_bbpsk/">
+      <i class="fab fa-instagram"></i>
+
+    </a>
+
+  </footer>
+</div>
+  <script src="jquery.js"></script>
+
+</body>
+</html>    
