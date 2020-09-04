@@ -17,7 +17,7 @@
     
     <nav>
 
-      <a href="#itiran" class="itiran">温泉一覧</a> <a href="#cafe" class="cafe">周辺カフェ</a> <a href="#hotel" class="ryokann">宿泊地</a>
+      <a href="#itiran" class="itiran">温泉一覧</a> <a href="#cafe" class="cafe">周辺カフェ</a> <a href="#hotel" class="ryokann">宿泊地</a> <a href="#dice-challenge" class="dice-challenge">サイコロチャレンジ</a>
     </nav>
 
   </header>
@@ -33,6 +33,7 @@
           <a href="#itiran"><li class="menu-list">温泉一覧</li></a> 
           <a href="#cafe"><li class="menu-list">周辺カフェ</li></a>
           <a href="#hotel"><li class="menu-list">宿泊地</li></a>
+          <a href="#dice-challenge"><li class="menu-list dice-challengeMenu">サイコロチャレンジ</li></a>
         </ul>
 
       </div>
@@ -169,23 +170,22 @@
 
    </div>
    <!--サイコロ-->
-   <div class="dice-wrapper">
-     <h2>＜サイコロチャレンジ＞</h2>
+   <div class="dice-wrapper" id="dice-challenge">
+     <h2>＜ランダムで巡り先へ＞</h2>
 
      <a id="dice">
-       <i class="fas fa-dice"></i>
+       <p class="random-go">どこへ行くでしょうか？</p>
   
      <div class="result">
        ↓
      </div>  
   
      </a>
-     <i class="fas fa-dice-one" id="dice-result"></i>
-     <i class="fas fa-dice-two" id="dice-result"></i>
-     <i class="fas fa-dice-three" id="dice-result"></i>
-     <i class="fas fa-dice-four" id="dice-result"></i>
-     <i class="fas fa-dice-five" id="dice-result"></i>
-     <i class="fas fa-dice-six" id="dice-result"></i>
+     <a class="dice-one" id="dice-result">熱海温泉</a>
+     <a class="dice-two" id="dice-result">草津温泉</a>
+     <a class="dice-three" id="dice-result">下呂温泉</a>
+     <a class="dice-four" id="dice-result">長岡温泉</a>
+
    </div>
    <!--ヘッダーへ戻るボタン-->
    <a href="#header" id="pageTop">
@@ -202,6 +202,7 @@
     </a>
 
   </footer>
+  
 </div>
   <script src="jquery.js"></script>
 
