@@ -145,7 +145,7 @@ footer {
   background-color: black;
   color:white;
   width:100%;
-  margin-top:70px;
+  margin-top:80px;
   float:left;
   text-align: left;
 }
@@ -169,13 +169,14 @@ h5 {
 }
 button {
   border-radius:20px;
+  padding:0;
 }
 button:focus {
   outline:0;
 }
 .random-go {
-  margin-top:15px;
   padding:10px;
+  margin-top:15px;
   color:black;
   font-size:30px;
   text-align: center;
@@ -189,12 +190,15 @@ button:focus {
   font-size:20px;
 }
 #dice-result {
-
+  text-decoration: none;
   color:black;
   font-size:40px;
   display:none;
+  padding:0 10px;
 }
-
+.go-to-random {
+  text-decoration: none;
+}
 .upper {
   font-size: 20px;
   background-color: rgba(0,0,0,1);
