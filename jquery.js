@@ -33,7 +33,7 @@ $(function(){
  });
 
  $('#dice').click(function(){
-  var number = parseInt(Math.random()* 6) + 1;
+  var number = parseInt(Math.random()* 4) + 1;
   if (number == 1){
     $('.dice-one').fadeIn();
     $('.dice-two').fadeOut();
@@ -54,23 +54,13 @@ $(function(){
     $('.dice-one').fadeOut();
     $('.dice-four').fadeOut();
 
-  } else if (number == 4) {
+  } else  {
    $('.dice-four').fadeIn();
    $('.dice-two').fadeOut();
     $('.dice-three').fadeOut();
     $('.dice-one').fadeOut();
     
-  } else if (number == 5) {
-   $('.dice-five').fadeIn();
-   $('.dice-two').fadeOut();
-    $('.dice-three').fadeOut();
-    $('.dice-four').fadeOut();
-   
-  } else {
-   $('.dice-six').fadeIn();
-   $('.dice-two').fadeOut();
-    $('.dice-three').fadeOut();
-    $('.dice-four').fadeOut();
+
    
   }
 });
