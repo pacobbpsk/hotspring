@@ -64,4 +64,13 @@ $(function(){
    
   }
 });
+
+setTimeout(function(){
+  $('.start-title').fadeIn(1600);
+},500);
+setTimeout(function(){
+  $('.start').fadeOut(500);
+},2500);
+
+
 });
