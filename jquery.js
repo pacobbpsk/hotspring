@@ -35,50 +35,43 @@ $(function(){
  $('#dice').click(function(){
   var number = parseInt(Math.random()* 6) + 1;
   if (number == 1){
-    $('.fa-dice-one').fadeIn();
-    $('.fa-dice-two').fadeOut();
-    $('.fa-dice-three').fadeOut();
-    $('.fa-dice-four').fadeOut();
-    $('.fa-dice-five').fadeOut();
-    $('.fa-dice-six').fadeOut();
+    $('.dice-one').fadeIn();
+    $('.dice-two').fadeOut();
+    $('.dice-three').fadeOut();
+    $('.dice-four').fadeOut();
+    
     
     
   } else if (number == 2) {
-   $('.fa-dice-two').fadeIn();
-   $('.fa-dice-one').fadeOut();
-    $('.fa-dice-three').fadeOut();
-    $('.fa-dice-four').fadeOut();
-    $('.fa-dice-five').fadeOut();
-    $('.fa-dice-six').fadeOut();
+   $('.dice-two').fadeIn();
+   $('.dice-one').fadeOut();
+    $('.dice-three').fadeOut();
+    $('.dice-four').fadeOut();
+    
   } else if (number == 3) {
-   $('.fa-dice-three').fadeIn();
-   $('.fa-dice-two').fadeOut();
-    $('.fa-dice-one').fadeOut();
-    $('.fa-dice-four').fadeOut();
-    $('.fa-dice-five').fadeOut();
-    $('.fa-dice-six').fadeOut();
-  } else if (number == 4) {
-   $('.fa-dice-four').fadeIn();
-   $('.fa-dice-two').fadeOut();
-    $('.fa-dice-three').fadeOut();
-    $('.fa-dice-one').fadeOut();
-    $('.fa-dice-five').fadeOut();
-    $('.fa-dice-six').fadeOut();
-  } else if (number == 5) {
-   $('.fa-dice-five').fadeIn();
-   $('.fa-dice-two').fadeOut();
-    $('.fa-dice-three').fadeOut();
-    $('.fa-dice-four').fadeOut();
-    $('.fa-dice-one').fadeOut();
-    $('.fa-dice-six').fadeOut();
-  } else {
-   $('.fa-dice-six').fadeIn();
-   $('.fa-dice-two').fadeOut();
-    $('.fa-dice-three').fadeOut();
-    $('.fa-dice-four').fadeOut();
-    $('.fa-dice-five').fadeOut();
-    $('.fa-dice-one').fadeOut();
+   $('.dice-three').fadeIn();
+   $('.dice-two').fadeOut();
+    $('.dice-one').fadeOut();
+    $('.dice-four').fadeOut();
 
+  } else if (number == 4) {
+   $('.dice-four').fadeIn();
+   $('.dice-two').fadeOut();
+    $('.dice-three').fadeOut();
+    $('.dice-one').fadeOut();
+    
+  } else if (number == 5) {
+   $('.dice-five').fadeIn();
+   $('.dice-two').fadeOut();
+    $('.dice-three').fadeOut();
+    $('.dice-four').fadeOut();
+   
+  } else {
+   $('.dice-six').fadeIn();
+   $('.dice-two').fadeOut();
+    $('.dice-three').fadeOut();
+    $('.dice-four').fadeOut();
+   
   }
 });
 });
