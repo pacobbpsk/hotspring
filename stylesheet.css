@@ -254,6 +254,28 @@ button:focus {
 .hide {
   display:none;
 }
+
+.start {
+  background-color: white;
+  position:fixed;
+  top:0;
+  bottom:0;
+  height:100%;
+  width:100%;
+  z-index:200;
+}
+.start p {
+  font-size:100px;
+}
+.start-title{
+  position:fixed;
+  top:0;
+  left:0;
+  margin:70px auto;
+  display:none;
+  z-index:222;
+  width:100%;
+}
 /*縦長サイズの表示*/
 @media (orientation:portrait) {
   header {
