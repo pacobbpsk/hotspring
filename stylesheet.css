@@ -383,4 +383,10 @@ a:hover {
 .dice-challengeMenu {
   width:50%;
 }
+.start-title {
+  margin:200px auto;
+}
+.start p {
+  font-size:50px;
+}
 };
