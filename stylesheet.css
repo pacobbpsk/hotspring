@@ -256,7 +256,9 @@ button:focus {
 }
 
 .start {
-  background-color: white;
+  background-image:url(https://media.istockphoto.com/photos/japanese-hot-spring-image-picture-id978993454?s=2048x2048);
+  background-size: cover;
+  background-blend-mode: hard-light;
   position:fixed;
   top:0;
   bottom:0;
@@ -266,6 +268,9 @@ button:focus {
 }
 .start p {
   font-size:100px;
+  font-weight: bold;
+  color:white;
+  text-shadow:3px 3px 3px black;
 }
 .start-title{
   position:fixed;
@@ -382,6 +387,12 @@ a:hover {
 }
 .dice-challengeMenu {
   width:50%;
+}
+.start {
+  background-image:url(https://media.istockphoto.com/photos/hot-bath-japanese-onsen-in-traditional-ryokan-resort-with-beautiful-picture-id1177851698?s=2048x2048);
+  background-size: cover;
+  background-blend-mode: hard-light;
+
 }
 .start-title {
   margin:200px auto;
