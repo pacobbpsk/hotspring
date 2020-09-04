@@ -17,7 +17,7 @@
     
     <nav>
 
-      <a href="#itiran" class="itiran">温泉一覧</a> <a href="#cafe" class="cafe">周辺カフェ</a> <a href="#hotel" class="ryokann">宿泊地</a> <a href="#dice-challenge" class="dice-challenge">サイコロチャレンジ</a>
+      <a href="#itiran" class="itiran">温泉一覧</a> <a href="#cafe" class="cafe">周辺カフェ</a> <a href="#hotel" class="ryokann">宿泊地</a> <a href="#dice-challenge" class="dice-challenge">ランダムで巡り先へ</a>
     </nav>
 
   </header>
@@ -33,7 +33,7 @@
           <a href="#itiran"><li class="menu-list">温泉一覧</li></a> 
           <a href="#cafe"><li class="menu-list">周辺カフェ</li></a>
           <a href="#hotel"><li class="menu-list">宿泊地</li></a>
-          <a href="#dice-challenge"><li class="menu-list dice-challengeMenu">サイコロチャレンジ</li></a>
+          <a href="#dice-challenge"><li class="menu-list dice-challengeMenu">ランダムで巡り先へ</li></a>
         </ul>
 
       </div>
@@ -174,17 +174,18 @@
      <h2>＜ランダムで巡り先へ＞</h2>
 
      <a id="dice">
-       <p class="random-go">どこへ行くでしょうか？</p>
+       <button class="random-go">どこへ行くでしょうか？<span><i class="fas fa-car"></i></span></button>
+    </a> 
   
      <div class="result">
-       ↓
+      <i class="fas fa-arrow-down"></i>
      </div>  
   
-     </a>
-     <a class="dice-one" id="dice-result">熱海温泉</a>
-     <a class="dice-two" id="dice-result">草津温泉</a>
-     <a class="dice-three" id="dice-result">下呂温泉</a>
-     <a class="dice-four" id="dice-result">長岡温泉</a>
+    
+     <div class="dice-one" id="dice-result">熱海温泉</div>
+     <div class="dice-two" id="dice-result">草津温泉</div>
+     <div class="dice-three" id="dice-result">下呂温泉</div>
+     <div class="dice-four" id="dice-result">長岡温泉</div>
 
    </div>
    <!--ヘッダーへ戻るボタン-->
