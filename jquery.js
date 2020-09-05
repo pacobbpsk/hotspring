@@ -1,4 +1,5 @@
 $(function(){
+  /*ナビメニュー機能*/
   $('#menu-icon').click(function(){
     $('#menu-contents').fadeIn();
     $('.upper').fadeOut();
@@ -16,6 +17,36 @@ $(function(){
    $('body,html').removeClass('modal-fix');
  });
 
+/*ナビクリック機能*/
+$('.itiran').click(function(){
+
+  $('#itiran').fadeIn();
+  $('#cafe').fadeIn();
+  $('#hotel').fadeIn();
+  $('#dice-challenge').fadeIn();
+
+});
+$('.cafe').click(function(){
+  $('#itiran').fadeIn();
+  $('#cafe').fadeIn();
+  $('#hotel').fadeIn();
+  $('#dice-challenge').fadeIn();
+});
+$('.ryokann').click(function(){
+  $('#itiran').fadeIn();
+  $('#cafe').fadeIn();
+  $('#hotel').fadeIn();
+  $('#dice-challenge').fadeIn();
+});
+$('.dice-challenge').click(function(){
+  $('#itiran').fadeIn();
+  $('#cafe').fadeIn();
+  $('#hotel').fadeIn();
+  $('#dice-challenge').fadeIn();
+});
+
+
+/*トップへ戻る機能*/
  var topPage = $('#pageTop');
  topPage.hide();
  $(window).scroll(function(){
@@ -32,6 +63,53 @@ $(function(){
    return false;
  });
 
+
+ /*スクロールで表示機能*/
+ if(!navigator.userAgent.match(/(iPhone|Android)/)){
+  $(function(){
+
+    var onsenList = $('#itiran');
+    onsenList.hide();
+    $(window).scroll(function(){
+      if ($(this).scrollTop() > 150){
+        onsenList.fadeIn(2500);
+      }
+    });
+    var cafe = $('#cafe');
+    cafe.hide();
+    $(window).scroll(function(){
+      if ($(this).scrollTop() > 600){
+        cafe.fadeIn(2500);
+      }
+    });
+    var hotel = $('#hotel');
+    hotel.hide();
+    $(window).scroll(function(){
+      if ($(this).scrollTop() > 2800){
+        hotel.fadeIn(2500);
+      }
+    });
+    var dice = $('#dice-challenge');
+    dice.hide();
+    $(window).scroll(function(){
+      if ($(this).scrollTop() > 4500){
+        dice.fadeIn(2500);
+      }
+    });
+    var faq = $('#faq');
+    faq.hide();
+    $(window).scroll(function(){
+      if ($(this).scrollTop() > 5000){
+        faq.fadeIn(2500);
+      }
+    });
+    
+  });
+};
+
+
+
+/*ランダム機能*/
  $('#dice').click(function(){
   var number = parseInt(Math.random()* 4) + 1;
   if (number == 1){
@@ -64,7 +142,7 @@ $(function(){
    
   }
 });
-
+/*スタート画面表示機能*/
 setTimeout(function(){
   $('.start-title').fadeIn(1600);
 },500);
@@ -72,5 +150,20 @@ setTimeout(function(){
   $('.start').fadeOut(500);
 },2500);
 
+/*アコーディオン機能*/
+$('.faq-list-contents').click(function(){
+  var $answer = $(this).find('.answer');
+  if ($answer.hasClass('show')) {
+    $answer.removeClass('show');
+    $answer.slideUp();
+    $(this).find('span').text('+');
+  }
+  else {
+    $answer.addClass('show');
+    $answer.slideDown();
+    $(this).find('span').text('-');
+
+  }
+});
 
 });
