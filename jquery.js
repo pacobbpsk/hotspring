@@ -78,7 +78,7 @@ $('.dice-challenge').click(function(){
     var cafe = $('#cafe');
     cafe.hide();
     $(window).scroll(function(){
-      if ($(this).scrollTop() > 600){
+      if ($(this).scrollTop() > 900){
         cafe.fadeIn(2500);
       }
     });
@@ -92,14 +92,14 @@ $('.dice-challenge').click(function(){
     var dice = $('#dice-challenge');
     dice.hide();
     $(window).scroll(function(){
-      if ($(this).scrollTop() > 4500){
+      if ($(this).scrollTop() > 5000){
         dice.fadeIn(2500);
       }
     });
     var faq = $('#faq');
     faq.hide();
     $(window).scroll(function(){
-      if ($(this).scrollTop() > 5000){
+      if ($(this).scrollTop() > 6200){
         faq.fadeIn(2500);
       }
     });
