@@ -63,10 +63,10 @@ nav {
   background-image: url(https://media.istockphoto.com/photos/gray-pub-interior-with-sofa-picture-id1177058841?s=2048x2048);
 }
 .nav-img3 {
-  background-image: url(https://media.istockphoto.com/photos/traditional-japanese-house-or-ryokan-with-shoji-sliding-paper-doors-picture-id1151603264?s=2048x2048);
+  background-image: url(file:///Users/hashimotokento/Desktop/8372437E-25E9-41EB-8EE1-4C47F0AB0E55.jpg);
 }
 .nav-img4 {
-  background-image: url(https://media.istockphoto.com/photos/white-dice-on-black-with-copy-space-picture-id1216365430?s=2048x2048);
+  background-image: url(https://cdn.pixabay.com/photo/2018/12/14/06/06/dice-3874307_960_720.jpg);
 }
 .menu {
   display:none;
@@ -298,7 +298,7 @@ button:focus {
 }
 /*スタート画面*/
 .start {
-  background-image:url(https://media.istockphoto.com/photos/japanese-hot-spring-image-picture-id978993454?s=2048x2048);
+  background-image:url(https://cdn.pixabay.com/photo/2016/05/02/09/45/japan-1366872_960_720.jpg);
   background-size: cover;
   background-blend-mode: hard-light;
   position:fixed;
@@ -429,7 +429,7 @@ a:hover {
 }
 
 .start {
-  background-image:url(https://media.istockphoto.com/photos/hot-bath-japanese-onsen-in-traditional-ryokan-resort-with-beautiful-picture-id1177851698?s=2048x2048);
+  background-image:url(file:///Users/hashimotokento/Desktop/72D12648-BF5D-43EE-BC84-FF647C8DD1BD.jpg);
   background-size: cover;
   background-blend-mode: hard-light;
 
