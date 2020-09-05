@@ -16,12 +16,13 @@ main {
 /*ヘッダー*/
 header {
   margin:0;
-  color:black;
-  background-image: url(https://media.istockphoto.com/photos/landscape-picture-id1172181313?s=2048x2048);
-  background-color: rgba(255,255,255,0.7);
+  color:white;
+  text-shadow:4px 4px 1px black;
+  background-image: url(https://cdn.pixabay.com/photo/2017/02/27/18/28/japan-2103868_960_720.jpg);
+  background-color: rgba(255,255,255,0.4);
   background-blend-mode: lighten;
   background-size:cover;
-  height:800px;
+  height:100vh;
 }
  /*温泉巡りタイトル*/ 
 h1 {
@@ -63,7 +64,7 @@ nav {
   background-image: url(https://cdn.pixabay.com/photo/2015/10/12/15/11/cafe-984275_960_720.jpg);
 }
 .nav-img3 {
-  background-image: url(file:///Users/hashimotokento/Desktop/8372437E-25E9-41EB-8EE1-4C47F0AB0E55.jpg);
+  background-image: url(https://cdn.pixabay.com/photo/2017/03/14/04/37/autumnal-leaves-2141946_960_720.jpg);
 }
 .nav-img4 {
   background-image: url(https://cdn.pixabay.com/photo/2018/12/14/06/06/dice-3874307_960_720.jpg);
@@ -429,7 +430,7 @@ a:hover {
 }
 
 .start {
-  background-image:url(file:///Users/hashimotokento/Desktop/72D12648-BF5D-43EE-BC84-FF647C8DD1BD.jpg);
+  background-image:url(https://cdn.pixabay.com/photo/2019/02/03/04/44/bath-house-3971871_960_720.jpg);
   background-size: cover;
   background-blend-mode: hard-light;
 
