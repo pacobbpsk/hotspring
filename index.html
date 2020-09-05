@@ -10,7 +10,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
  </head>
-<body>
+<body id="body">
+  <main>
   <div class="wrapper" id="wrapper">
   <header id="header">
     <h1>温泉街巡り</h1>
@@ -21,7 +22,7 @@
 
     <!--メニューナビPC-->
     <nav>
-      <ul class="nav-wrapper">
+      <ul class="nav-wrapper" id="nav-wrapper">
         <li class="nav-flex nav-img1">
           <a href="#itiran" class="itiran nav-menu">温泉一覧</a>
         </li>
@@ -52,7 +53,7 @@
           <a href="#itiran"><li class="menu-list">温泉一覧</li></a> 
           <a href="#cafe"><li class="menu-list">周辺カフェ</li></a>
           <a href="#hotel"><li class="menu-list">宿泊地</li></a>
-          <a href="#dice-challenge"><li class="menu-list dice-challengeMenu">ランダムで巡り先へ</li></a>
+          <a href="#dice-challenge"><li class="dice-challengeMenu menu-list">ランダムで巡り先へ</li></a>
         </ul>
 
       </div>
@@ -208,6 +209,30 @@
      <button class="dice-four" id="dice-result"><a class="go-to-random">長岡温泉へ</a><span> </span><i class="far fa-compass"></i></button>
 
    </div>
+   <!--質問回答-->
+   <div class="faq" id="faq">
+     <h2>＜よくある質問＞</h2>
+    <ul class="faq-list">
+      <li class="faq-list-contents">
+       <div class="question">Q1.温泉まではのアクセスのオススメは？       <span class="plus-minus">+</span></div>
+       <div class="answer">A.駐車場があるため車がオススメです。また、バスも通っているのでオススメです。</div>
+      </li>
+      <li class="faq-list-contents">
+        <div class="question">Q2.温泉まではのアクセスのオススメは？       <span class="plus-minus">+</span></div>
+        <div class="answer">A.駐車場があるため車がオススメです。また、バスも通っているのでオススメです。</div>
+      </li>
+      <li class="faq-list-contents">
+        <div class="question">Q3.温泉まではのアクセスのオススメは？       <span class="plus-minus">+</span></div>
+        <div class="answer">A.駐車場があるため車がオススメです。また、バスも通っているのでオススメです。</div>
+      </li>
+      <li class="faq-list-contents">
+        <div class="question">Q4.温泉まではのアクセスのオススメは？       <span class="plus-minus">+</span></div>
+        <div class="answer">A.駐車場があるため車がオススメです。また、バスも通っているのでオススメです。</div>
+      </li>
+    </ul>
+
+   </div>
+
    <!--ヘッダーへ戻るボタン-->
    <a href="#header" id="pageTop">
 
@@ -223,6 +248,8 @@
     </a>
 
   </footer>
+
+</main>
   
 </div>
   <script src="jquery.js"></script>
