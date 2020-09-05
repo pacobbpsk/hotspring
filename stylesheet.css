@@ -104,6 +104,9 @@ h3 {
   padding-top:40px;
 }
 /*温泉一覧*/
+.onsen-list {
+  height:100vh;
+}
 ul {
   padding:0;
   margin:15px auto;
@@ -197,7 +200,7 @@ h5 {
 }
 /*ランダム巡り*/
 .dice-wrapper {
-  height:250px;
+  height:100vh;
 }
 button {
   border-radius:20px;
@@ -232,6 +235,12 @@ button:focus {
 .go-to-random {
   text-decoration: none;
 }
+.dice-wrapper img {
+  border-radius: 40px;
+  border:4px solid white;
+  padding:0;
+}
+
 /*質問回答*/
 .faq-list {
   width:50%;
