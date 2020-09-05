@@ -10,7 +10,9 @@ body{
   background-color: lightgray;
   font-family:YuMinCho;
 }
-
+main {
+  z-index:8000;
+}
 /*ヘッダー*/
 header {
   margin:0;
@@ -19,7 +21,7 @@ header {
   background-color: rgba(255,255,255,0.7);
   background-blend-mode: lighten;
   background-size:cover;
-  height:700px;
+  height:800px;
 }
  /*温泉巡りタイトル*/ 
 h1 {
@@ -199,6 +201,7 @@ h5 {
 button {
   border-radius:20px;
   padding:0;
+  background-color: white;
 }
 button:focus {
   outline:0;
@@ -228,6 +231,44 @@ button:focus {
 .go-to-random {
   text-decoration: none;
 }
+/*質問回答*/
+.faq-list {
+  width:50%;
+  border-radius: 20px;
+  height:200px;
+  padding:30px;
+ 
+}
+.faq {
+  margin-top:20px;
+}
+.faq-list-contents:focus {
+  outline:none;
+}
+.faq-list-contents {
+  cursor:pointer;
+  width:70%;
+  margin-bottom:10px;
+  margin-right:auto;
+  margin-left:auto;
+
+}
+.plus-minus {
+  float:right;
+}
+.answer {
+  display:none;
+  padding:0;
+  text-align:left;
+}
+.question {
+  padding:0;
+  border-top: 1px solid black;
+  border-bottom:1px solid black;
+  text-align:left;
+
+}
+
 .upper {
   font-size: 20px;
   background-color: rgba(0,0,0,1);
@@ -249,6 +290,9 @@ button:focus {
 .modal-fix {
   position:fixed;
 }
+.show {
+  display:block;
+}
 .hide {
   display:none;
 }
@@ -262,7 +306,7 @@ button:focus {
   bottom:0;
   height:100%;
   width:100%;
-  z-index:200;
+  z-index:9000;
 }
 .start p {
   font-size:100px;
@@ -276,7 +320,7 @@ button:focus {
   left:0;
   margin:70px auto;
   display:none;
-  z-index:222;
+  z-index:9999;
   width:100%;
 }
 /*縦長サイズの表示*/
@@ -395,5 +439,15 @@ a:hover {
 }
 .start p {
   font-size:50px;
+}
+
+.faq-list {
+  width:95%;
+  padding:0;
+}
+
+.faq-list-contents {
+  width:100%;
+  margin:0;
 }
 };
