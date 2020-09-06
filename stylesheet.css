@@ -59,6 +59,18 @@ nav {
 }
 .nav-img1 {
   background-image: url(https://cdn.pixabay.com/photo/2013/03/01/18/29/clean-87636_960_720.jpg); 
+  position:relative;
+
+}
+.nav-list1 {
+  position:absolute;
+  top:20px;
+  right:70px;
+  font-size:22px;
+  display:none;
+}
+.nav-list {
+  margin-bottom:5px;
 }
 .nav-img2 {
   background-image: url(https://cdn.pixabay.com/photo/2015/10/12/15/11/cafe-984275_960_720.jpg);
@@ -76,11 +88,12 @@ nav {
 
   color:white;
   font-weight: bold;
-  text-shadow: 4px 4px 0 black;
+  text-shadow: 3px 3px 0 black;
   position:absolute;
   top:80px;
   left:50px;
  }
+
 /*aタグ*/
 a {
   color:black;  
@@ -141,6 +154,9 @@ img {
   width:55%;
 }
 /*周辺カフェ*/
+.around-cafe {
+  margin-bottom:100px;
+}
 .cafe-wrapper {
   background-color: white;
   width:50%;
@@ -160,7 +176,9 @@ p {
   text-align:left;
 }
 /*宿泊地*/
-
+.shukuhakuti {
+  margin-bottom:100px;
+}
 .hotel {
   margin-top:30px;
   background-color: white;
@@ -251,7 +269,7 @@ button:focus {
 }
 .faq {
   margin-top:100px;
-  border-top: 1px solid black;
+  border-top:1px solid black;
 }
 .faq-list-contents:focus {
   outline:none;
@@ -262,6 +280,7 @@ button:focus {
   margin-bottom:10px;
   margin-right:auto;
   margin-left:auto;
+  border-bottom: 1px solid grey;
 
 }
 .plus-minus {
@@ -269,14 +288,13 @@ button:focus {
 }
 .answer {
   display:none;
-  padding:0;
+  padding:0 0 10px 0;
   text-align:left;
 }
 .question {
   padding:0;
-  border-top: 1px solid black;
-  border-bottom:1px solid black;
   text-align:left;
+  margin-bottom:10px;
 
 }
 
@@ -301,7 +319,7 @@ button:focus {
 .modal-fix {
   position:fixed;
 }
-.show {
+.list-show {
   display:block;
 }
 .hide {
