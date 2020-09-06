@@ -85,8 +85,8 @@ $('.dice-challenge').click(function(){
     var hotel = $('#hotel');
     hotel.hide();
     $(window).scroll(function(){
-      if ($(this).scrollTop() > 2800){
-        hotel.fadeIn(2500);
+      if ($(this).scrollTop() > 3000){
+        hotel.fadeIn(2700);
       }
     });
     var dice = $('#dice-challenge');
@@ -164,6 +164,35 @@ $('.faq-list-contents').click(function(){
     $(this).find('span').text('-');
 
   }
+});
+
+$('.nav-flex').hover(
+  function(){
+    $(this).find('.nav-list1').addClass('list-show');
+}, 
+ function(){
+   $(this).find('.nav-list1').removeClass('list-show');
+});
+$('.nav-flex').hover(
+  function(){
+    $(this).find('.nav-list1').addClass('list-show');
+}, 
+ function(){
+   $(this).find('.nav-list1').removeClass('list-show');
+});
+$('.nav-flex').hover(
+  function(){
+    $(this).find('.nav-list1').addClass('list-show');
+}, 
+ function(){
+   $(this).find('.nav-list1').removeClass('list-show');
+});
+$('.nav-flex').hover(
+  function(){
+    $(this).find('.nav-list1').addClass('list-show');
+}, 
+ function(){
+   $(this).find('.nav-list1').removeClass('list-show');
 });
 
 });
