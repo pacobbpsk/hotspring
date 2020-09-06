@@ -92,15 +92,15 @@ $('.dice-challenge').click(function(){
     var dice = $('#dice-challenge');
     dice.hide();
     $(window).scroll(function(){
-      if ($(this).scrollTop() > 5000){
-        dice.fadeIn(2500);
+      if ($(this).scrollTop() > 5300){
+        dice.fadeIn(2900);
       }
     });
     var faq = $('#faq');
     faq.hide();
     $(window).scroll(function(){
-      if ($(this).scrollTop() > 6200){
-        faq.fadeIn(2500);
+      if ($(this).scrollTop() > 6400){
+        faq.fadeIn(2700);
       }
     });
     
