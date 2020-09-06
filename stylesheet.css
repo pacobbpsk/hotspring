@@ -10,9 +10,7 @@ body{
   background-color: lightgray;
   font-family:YuMinCho;
 }
-main {
-  z-index:8000;
-}
+
 /*ヘッダー*/
 header {
   margin:0;
@@ -119,6 +117,7 @@ h3 {
 /*温泉一覧*/
 .onsen-list {
   height:100vh;
+  padding-top:80px;
 }
 ul {
   padding:0;
@@ -194,8 +193,7 @@ p {
 }
 /*フッター*/
 footer {
-  background-color: black;
-  color:white;
+  border-top: 2px black solid;
   width:100%;
   margin-top:80px;
   float:left;
@@ -204,7 +202,7 @@ footer {
 
 h5 {
   margin:0;
-  padding:10px 0 0 10px;
+  padding:20px 0 0 30px;
   font-size:20px;
 }
 .fa-instagram {
@@ -212,8 +210,8 @@ h5 {
   font-size:40px;
   padding-top:20px;
   padding-bottom:20px;
-  padding-left:10px;
-  color:white;
+  padding-left:30px;
+  color:black;
   
 }
 /*ランダム巡り*/
