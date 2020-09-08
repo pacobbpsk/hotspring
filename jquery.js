@@ -1,40 +1,34 @@
 $(function(){
-  /*ナビメニュー機能*/
+  /*スマホナビメニュー機能*/
+
+
+
  $('.menu-list').click(function(){
    $('#menu-contents').animate({'marginRight':'-400'},500);
    $('.upper').fadeIn();
    $('body,html').removeClass('modal-fix');
  });
 
- $('#menu-icon').click(function(){
-   var $menu = $('.menu-contents');
-   if ($menu.hasClass('open')) {
-      $menu.removeClass('open');
-   } else {
-     $menu.addClass('open');
-     $menu.animate({'marginRight':'400'},500);
-     $('.upper').fadeOut();
-     $('body,html').addClass('modal-fix');
+ $('.menu-icon').click(function(){
+  var $menu = $('.menu-contents');
+  if ($menu.hasClass('open')) {
+     $menu.removeClass('open');
+     $menu.animate({'marginRight':'-400'},500);
+     $('.upper').fadeIn();
+     $('body,html').removeClass('modal-fix');
 
-
-   }
- });
-
-$('#close-btn').click(function(){
-  
-  var $close = $('#menu-contents');
-  if ($close.hasClass('close')) {
-    $close.removeClass('close');
   } else {
-    $close.addClass('close');
-    $close.animate({'marginRight':'-400'},500);
-    $('.upper').fadeIn();
-    $('body,html').removeClass('modal-fix');
-  }
+    $menu.addClass('open');
+    $menu.animate({'marginRight':'400'},500);
+    $('.upper').fadeOut();
+    $('body,html').addClass('modal-fix');
 
+
+  }
 });
 
-/*ナビクリック機能*/
+
+/*PCナビクリック機能*/
 $('.itiran').click(function(){
 
   $('#itiran').fadeIn();
@@ -81,7 +75,7 @@ $('.dice-challenge').click(function(){
  });
 
 
- /*スクロールで表示機能*/
+ /*スクロールでメインコンテンツ表示機能*/
  if(!navigator.userAgent.match(/(iPhone|Android)/)){
   $(function(){
 
