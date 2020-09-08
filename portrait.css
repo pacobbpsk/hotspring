@@ -18,6 +18,7 @@
   /*温泉一覧*/
   .onsen-wrapper {
     display:block;
+    width:90%;
   }
   .onsen-wrapper li {
     float: inherit;
