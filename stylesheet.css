@@ -116,7 +116,7 @@ h3 {
 }
 /*温泉一覧*/
 .onsen-list {
-  height:100vh;
+  min-height:100vh;
   padding-top:80px;
 }
 ul {
@@ -295,7 +295,7 @@ button:focus {
   margin-bottom:10px;
 
 }
-
+/*トップに戻るボタン*/
 .upper {
   font-size: 20px;
   background-color: rgba(0,0,0,1);
@@ -307,13 +307,13 @@ button:focus {
   bottom:150px;
   margin:0;
 }
+
 .fa-sort-up {
   color:white;
   font-size:30px;
-  padding-top:15px;
-
-  
+  padding-top:15px;  
 }
+
 .modal-fix {
   position:fixed;
 }
