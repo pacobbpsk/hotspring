@@ -132,12 +132,11 @@ ul {
 .onsen-wrapper {
   display:flex;
   flex-wrap:wrap;
-  width:80%;
+  width:95%;
 }
 .onsen-wrapper li {
    background-color:white;
    width:40%;
-   border-radius:20px;
    float:right;
    margin:25px auto;
       
@@ -158,10 +157,8 @@ img {
 }
 .cafe-wrapper {
   background-color: white;
-  width:50%;
-  margin:20px auto;
-  border-radius:20px;
-  
+  width:80%;
+  margin:20px auto;  
 
 }
 h4 {
@@ -169,7 +166,7 @@ h4 {
 }
 
 p {
-  width:50%;
+  width:80%;
   margin:auto;
   padding-bottom:20px;
   text-align:left;
@@ -181,10 +178,9 @@ p {
 .hotel {
   margin-top:30px;
   background-color: white;
-  border-radius:20px;
 }
 .hotel-wrapper {
-  width:50%;
+  width:80%;
   margin:0px auto;
   
 }
