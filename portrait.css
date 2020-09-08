@@ -8,27 +8,37 @@
     font-size:45px;
   }
   /*ナビメニュー*/
-  nav {
+  .pc-nav {
     display:none;
-
   }
+
+  /*.menu-contents {
+    margin-right:-200px;
+  }*/
   /*温泉一覧*/
   .onsen-wrapper {
     display:block;
-    margin:0 auto;
   }
   .onsen-wrapper li {
     float: inherit;
     width:100%;
+  }
+  .onsen-list {
+    padding-top:0;
+    margin:20px auto;
   }
   .onsenn {
     padding-left:10px;
     padding-right:10px;
   }
   /*周辺カフェ*/
+  .around-cafe {
+    margin-bottom:50px;
+  }
  .cafe-wrapper {
    width:80%;
  }
+
 
  /*宿泊地*/
  .hotel-wrapper {
@@ -42,7 +52,7 @@ h4 {
 }
 p {
   font-size:10px;
-  width:80%;
+  width:90%;
   padding-bottom:10px;
 }
 
@@ -63,6 +73,10 @@ a:hover {
 .fa-compass {
   font-size:25px;
 }
+.huji {
+ width:90%;
+}
+
 /*トップへのボタン*/
 .upper {
   right:10px;
@@ -87,15 +101,15 @@ a:hover {
   font-size:25px;
 }
 .menu-contents{
-  display:none;
+  display:block;
   background-color:rgba(0,0,0,0.8);
   text-align:center;
   position:fixed;
   top:0;
-  bottom:0;
-  right:0;
-  left:0;
+  right:-1500px;
   width:100%;
+  min-height: 100vh;
+
   
 }
 .fa-times {
