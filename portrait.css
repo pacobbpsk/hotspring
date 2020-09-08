@@ -1,0 +1,151 @@
+/*縦長サイズの表示*/
+@media (orientation:portrait) {
+  /*ヘッダー*/
+  header {
+    height:250px;
+  }
+  h1 {
+    font-size:45px;
+  }
+  /*ナビメニュー*/
+  nav {
+    display:none;
+
+  }
+  /*温泉一覧*/
+  .onsen-wrapper {
+    display:block;
+    margin:0 auto;
+  }
+  .onsen-wrapper li {
+    float: inherit;
+    width:100%;
+  }
+  .onsenn {
+    padding-left:10px;
+    padding-right:10px;
+  }
+  /*周辺カフェ*/
+ .cafe-wrapper {
+   width:80%;
+ }
+
+ /*宿泊地*/
+ .hotel-wrapper {
+  width:80%;
+}
+
+h4 {
+  margin-top:10px;
+  margin-bottom:10px;
+  font-size:15px;
+}
+p {
+  font-size:10px;
+  width:80%;
+  padding-bottom:10px;
+}
+
+a:hover {
+  opacity: inherit;
+}
+
+/*ランダム巡り*/
+.dice-wraooer {
+  height:350px;
+}
+.random-go {
+  font-size:25px;
+}
+.go-to-random {
+  font-size:25px;
+}
+.fa-compass {
+  font-size:25px;
+}
+/*トップへのボタン*/
+.upper {
+  right:10px;
+  height:40px;
+  width:40px;
+
+}
+.fa-sort-up {
+  padding-top:10px;
+  font-size:25px;
+}
+
+/*スマホメニューナビ*/
+.menu {
+  display:block;
+}
+.fa-bars {
+  color:black;
+  position:absolute;
+  top:150px;
+  right:20px;
+  font-size:25px;
+}
+.menu-contents{
+  display:none;
+  background-color:rgba(0,0,0,0.8);
+  text-align:center;
+  position:fixed;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  width:100%;
+  
+}
+.fa-times {
+  color:white;
+  font-size:25px;
+  position:absolute;
+  top:150px;
+  right:20px;
+
+}
+.menu-title{
+  width:100%;
+  margin:20px auto 40px auto;
+  color:white;
+}
+.menu-itiran {
+  width:100%;
+  margin:0 auto;
+}
+.menu-itiran a {
+  color:white;
+}
+.menu-list {
+ padding-top:20px;
+ width:60%;
+ margin:0 auto;
+}
+
+/*スタート画面*/
+.start {
+  background-image:url(https://cdn.pixabay.com/photo/2019/02/03/04/44/bath-house-3971871_960_720.jpg);
+  background-size: cover;
+  background-blend-mode: hard-light;
+
+}
+.start-title {
+  margin:200px auto;
+}
+.start p {
+  font-size:50px;
+}
+
+/*質問回答*/
+.faq-list {
+  width:95%;
+  padding:0;
+}
+
+.faq-list-contents {
+  width:100%;
+  margin:0;
+}
+};
