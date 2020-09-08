@@ -1,21 +1,38 @@
 $(function(){
   /*ナビメニュー機能*/
-  $('#menu-icon').click(function(){
-    $('#menu-contents').fadeIn();
-    $('.upper').fadeOut();
-    $('body,html').addClass('modal-fix');
-
-  });
-  $('#close-btn').click(function(){
-    $('#menu-contents').fadeOut();
-    $('.upper').fadeIn();
-    $('body,html').removeClass('modal-fix');
-  });
  $('.menu-list').click(function(){
-   $('#menu-contents').fadeOut();
+   $('#menu-contents').animate({'marginRight':'-400'},500);
    $('.upper').fadeIn();
    $('body,html').removeClass('modal-fix');
  });
+
+ $('#menu-icon').click(function(){
+   var $menu = $('.menu-contents');
+   if ($menu.hasClass('open')) {
+      $menu.removeClass('open');
+   } else {
+     $menu.addClass('open');
+     $menu.animate({'marginRight':'400'},500);
+     $('.upper').fadeOut();
+     $('body,html').addClass('modal-fix');
+
+
+   }
+ });
+
+$('#close-btn').click(function(){
+  
+  var $close = $('#menu-contents');
+  if ($close.hasClass('close')) {
+    $close.removeClass('close');
+  } else {
+    $close.addClass('close');
+    $close.animate({'marginRight':'-400'},500);
+    $('.upper').fadeIn();
+    $('body,html').removeClass('modal-fix');
+  }
+
+});
 
 /*ナビクリック機能*/
 $('.itiran').click(function(){
