@@ -12,7 +12,6 @@
 
  </head>
 <body id="body">
-  <main>
   <div class="wrapper" id="wrapper">
   <header id="header">
     <h1>温泉街巡り</h1>
@@ -22,7 +21,7 @@
     
 
     <!--メニューナビPC-->
-    <nav>
+    <nav class="pc-nav">
       <ul class="nav-wrapper" id="nav-wrapper">
         <li class="nav-flex nav-img1">
           <a href="#itiran" class="itiran nav-menu">温泉一覧</a>
@@ -63,10 +62,10 @@
 
     <nav class="menu" id="nav">
       <div>
-        <i class="fas fa-bars" id="menu-icon"></i>
+        <i class="fas fa-bars menu-icon" id="menu-icon"></i>
       </div>
       <div class="menu-contents" id="menu-contents">
-        <i class="fas fa-times" id="close-btn"></i>
+        <i class="fas fa-times menu-icon" id="close-btn"></i>
         <h3 class="menu-title">MENU</h3>
         <ul class="menu-itiran">
           <a href="#itiran"><li class="menu-list">温泉一覧</li></a> 
@@ -209,7 +208,7 @@
      </div>
 
    </div>
-   <!--サイコロ-->
+   <!--ランダム巡り-->
    <div class="dice-wrapper" id="dice-challenge">
      <h2>＜ランダムで巡り先へ＞</h2>
 
@@ -274,10 +273,10 @@
 
   </footer>
 
-</main>
   
 </div>
   <script src="jquery.js"></script>
+  <script src="react.js"></script>
 
 
 <!--スタート画面-->
