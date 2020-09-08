@@ -1,10 +1,7 @@
 $(function(){
   /*スマホナビメニュー機能*/
-
-
-
  $('.menu-list').click(function(){
-   $('#menu-contents').animate({'marginRight':'-400'},500);
+   $('#menu-contents').animate({'marginRight':'-1500'},1000);
    $('.upper').fadeIn();
    $('body,html').removeClass('modal-fix');
  });
@@ -13,13 +10,13 @@ $(function(){
   var $menu = $('.menu-contents');
   if ($menu.hasClass('open')) {
      $menu.removeClass('open');
-     $menu.animate({'marginRight':'-400'},500);
+     $menu.animate({'marginRight':'-1500'},1000);
      $('.upper').fadeIn();
      $('body,html').removeClass('modal-fix');
 
   } else {
     $menu.addClass('open');
-    $menu.animate({'marginRight':'400'},500);
+    $menu.animate({'marginRight':'1500'},1000);
     $('.upper').fadeOut();
     $('body,html').addClass('modal-fix');
 
